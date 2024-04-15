@@ -89,3 +89,15 @@ Difficultés pour comprendre ce qu'est `Indexes` et trouver la bonne ligne.
 - activation du site avec la commande `sudo a2ensite mon-serveur-ssl.conf` :  
  ![alt text](Image/a2ensite_mon_serveur.PNG)  
 
+
+# 4. Langage de programmation PHP
+- installation de `php` avec la commande `sudo apt-get install php`  
+
+- installation de `libapache2-mod-php` avec la commande `sudo apt-get install libapache2-mod-php` :  
+ ![alt text](Image/install_libapache2-mod-php.PNG)  
+
+- mise en commanetaire des 5 dernières lignes de `/etc/apache2/mods-enabled/php8.1.conf` avec la commande `sudo nano /etc/apache2/mods-enabled/php8.1.conf`.
+
+- création du fichier `index.php` avec la commande `sudo nano /home/iut/public_html/index.php`.
+ ![alt text](Image/php_file.PNG)  
+
