@@ -118,7 +118,7 @@ Difficultés pour comprendre ce qu'est `Indexes` et trouver la bonne ligne.
 
 
 # 6. Outil d'administration de bases de données phpMyAdmin
-- installation de `phpmyadmin` avec la commande `sudo apt-get install phpmyadmin`.  
+- installation de `phpmyadmin` avec la commande `sudo apt-get install phpmyadmin`, le mot de passe est `a`.  
 
 - activation module de gestion des chaînes de caractères multi-octets de `php` avec la commande `sudo phpenmod mbstring`.
 
