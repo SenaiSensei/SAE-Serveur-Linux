@@ -72,3 +72,20 @@ Difficultés pour comprendre ce qu'est `Indexes` et trouver la bonne ligne.
 
 - activation site avec la commande `sudo a2ensite 2a4v3-31uvm0428` :  
  ![alt text](Image/a2ensite_td-r205.PNG)  
+
+# 3. Serveur Web sécurisé https
+
+- création du certificat et de son dossier avec le commandes :
+    - `mkdir /etc/apache2/ssl`
+    - `sudo /usr/sbin/make-ssl-cert /usr/share/ssl-cert/ssleay.cnf /etc/apache2/ssl/apache.pem`
+
+- copie du fichier de configuration `sudo cp default-ssl.conf mon-serveur-ssl.conf`.  
+
+- édition du fichier avec la commande `sudo nano mon-serveur-ssl.conf`.  
+
+- activation du module `ssl` avec la commande `sudo a2enmod ssl` :  
+ ![alt text](Image/a2enmod_ssl.PNG)  
+
+- activation du site avec la commande `sudo a2ensite mon-serveur-ssl.conf` :  
+ ![alt text](Image/a2ensite_mon_serveur.PNG)  
+
