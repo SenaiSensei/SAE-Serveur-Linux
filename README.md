@@ -116,3 +116,9 @@ Difficultés pour comprendre ce qu'est `Indexes` et trouver la bonne ligne.
 - Test du serveur `mysql` avec la commande `mysqlshow -u admin -p` :  
  ![alt text](Image/test_serv_sql.PNG)  
 
+
+# 6. Outil d'administration de bases de données phpMyAdmin
+- installation de `phpmyadmin` avec la commande `sudo apt-get install phpmyadmin`.  
+
+- activation module de gestion des chaînes de caractères multi-octets de `php` avec la commande `sudo phpenmod mbstring`.
+
