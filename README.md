@@ -122,3 +122,11 @@ Difficultés pour comprendre ce qu'est `Indexes` et trouver la bonne ligne.
 
 - activation module de gestion des chaînes de caractères multi-octets de `php` avec la commande `sudo phpenmod mbstring`.
 
+- accès avec le lien `http://10.31.33.172/phpmyadmin/` :  
+ ![alt text](Image/accès_phpmyadmin.PNG)  
+
+- accès avec l'utilisateur `admin` :  
+ ![alt text](Image/phpmyadmin_web.PNG)  
+
+- connexion avec le nouvel utilisateur `mysqltest` :  
+ ![alt text](Image/mysqltest.PNG)  
