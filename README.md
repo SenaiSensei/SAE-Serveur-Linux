@@ -39,5 +39,23 @@
 Difficultés pour donner les droits d'accès aux dossiers.
 
 - don des droit d'accès au dossier `iut/` avec la commande `chmod 777 iut`.  
+- *changement* : utilisation de la commande `setfacl -m d:www-data:rw /hme/iut/`
 
 - don des droit d'accès au dossier `public_html/` avec la commande `chmod 777 public_html`.  
+- *changement* :  utilisation de la commande `setfacl -m d:www-data:rw /hme/iut/public_html/`
+
+Difficultés pour comprendre ce qu'est `Indexes` et trouver la bonne ligne.
+
+- suppression de la ligne contenant l'option `Indexes` en accédant au fichier avec la commande `sudo nano /etc/apache2/apache2.conf` :  
+ ![alt text](Image/indexes_apache2_1.PNG)  
+ ![alt text](Image/indexes_apache2_2.PNG)  
+
+- création du fichier `bienvenu.html` avec la commande `nano public_html/bienvenue.html` puis accès par l'adresse :  
+ ![alt text](Image/bienvenue.html.PNG)  
+
+## 2.2 Les serveurs virtuels
+
+- syntaxe accès site : `http://10.31.33.172/~iut`  
+
+- vue des noms `DNS` :  
+ ![alt text](Image/ad_IP_DNS.PNG)
