@@ -25,7 +25,7 @@
 - re-vérification de `apache2` :  
  ![alt text](Image/apache2_status_2.PNG)  
 
-- Ecploration du dossier `/etc/apache2` avec la commande `ls /etc/apache2`.  
+- Exploration du dossier `/etc/apache2` avec la commande `ls /etc/apache2`.  
  ![alt text](Image/explore_etc_apache2.PNG)  
 
 - utilisation de la commande `a2enmod userdir` pour activer le module `apache2` : `userdir`.  
@@ -96,8 +96,23 @@ Difficultés pour comprendre ce qu'est `Indexes` et trouver la bonne ligne.
 - installation de `libapache2-mod-php` avec la commande `sudo apt-get install libapache2-mod-php` :  
  ![alt text](Image/install_libapache2-mod-php.PNG)  
 
-- mise en commanetaire des 5 dernières lignes de `/etc/apache2/mods-enabled/php8.1.conf` avec la commande `sudo nano /etc/apache2/mods-enabled/php8.1.conf`.
+- mise en commanetaire des 5 dernières lignes de `/etc/apache2/mods-enabled/php8.1.conf` avec la commande `sudo nano /etc/apache2/mods-enabled/php8.1.conf`.  
 
-- création du fichier `index.php` avec la commande `sudo nano /home/iut/public_html/index.php`.
+- création du fichier `index.php` avec la commande `sudo nano /home/iut/public_html/index.php`.  
  ![alt text](Image/php_file.PNG)  
+
+# 5. Serveur de base de données MySQL
+- installation de `mysql-server` avec la commande `sudo apt-get install mysql-server`.  
+
+- configuration de la sécurité avec la commande `sudo mysql_secure_installation`.  
+ ![alt text](Image/create_root_sql.PNG)  
+
+- création d'un utilisateur `admin` avec la commande `CREATE USER 'admin'@'localhost' IDENTIFIED BY 'iutinfo';` :  
+ ![alt text](Image/sql_create_admin.PNG)  
+
+- dons de tous les droit à l'utilisateur avec la commande `GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' WITH GRANT OPTION;` :  
+ ![alt text](Image/grant_perm_admin.PNG)  
+
+- Test du serveur `mysql` avec la commande `mysqlshow -u admin -p` :  
+ ![alt text](Image/test_serv_sql.PNG)  
 
