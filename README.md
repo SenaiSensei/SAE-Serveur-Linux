@@ -66,7 +66,7 @@ Difficultés pour comprendre ce qu'est `Indexes` et trouver la bonne ligne.
 
 - création lien symbloique `sudo ln -s /home/iut/mon_serveur /var/www`.  
 
-- copie de `000-default.conf` en `td-r205.conf` avec la commande `sudo cp 000-default.conf td-r205.conf`.  
+- copie de `000-default.conf` en `2a4v3-31uvm0428.conf` avec la commande `sudo cp 000-default.conf 2a4v3-31uvm0428.conf`.  
 
 - modfication du fichier `2a4v3-31uvm0428.conf` avec la commande `sudo nano 2a4v3-31uvm0428.conf`.  
 
