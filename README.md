@@ -130,3 +130,49 @@ Difficultés pour comprendre ce qu'est `Indexes` et trouver la bonne ligne.
 
 - connexion avec le nouvel utilisateur `mysqltest` :  
  ![alt text](Image/mysqltest.PNG)  
+
+# 7. Installation de la plateforme collaborative MediaWiki  
+- récupération du fichier zip de `MediaWiki` avec la commande `wget https://releases.wikimedia.org/mediawiki/1.41/mediawiki-1.41.1.tar.gz` :  
+ ![alt text](Image/mediwiki_dl.PNG)  
+
+- extraction de l'archive dans `/home/iut/mon_serveur` avec la commande `tar -xvf mediawiki-1.41.1.tar.gz -C /home/iut/mon_serveur/`
+ ![alt text](Image/extraction_mediawiki.PNG)  
+
+- création de la BD avec la commande `CREATE DATABASE my_wiki;` :  
+ ![alt text](Image/mediwiki_cbd.PNG)  
+
+- création de l'utlisateur et dons des permissions :  
+ ![alt text](Image/mediawiki_cuser.PNG)  
+ ![alt text](Image/mediawiki_grant_perm_user.PNG)  
+
+- accès au site web par l'adresse `https://2a4v3-31uvm0428.ad-urca.univ-reims.fr/mediawiki/` :  
+ ![alt text](Image/erreur_mediawiki.PNG)  
+
+- installation de l'extension manquante `intl` avec la commande `sudo apt-get install -y php-intl` :  
+ ![alt text](Image/install_intl.PNG)
+
+- 2ème tentative de connexion à l'adresse `https://2a4v3-31uvm0428.ad-urca.univ-reims.fr/mediawiki/` :  
+ ![alt text](Image/connexion_mediawiki.PNG)  
+
+- séléction de la langue de `Mediawiki` :  
+ ![alt text](Image/mediawiki_lng.PNG)  
+
+- Bienvenue de `Mediawiki` :  
+ ![alt text](Image/mediawiki_bv.PNG)  
+
+- Connexion à la BD :  
+ ![alt text](Image/mediawiki_bd_connexion.PNG)  
+
+- Paramètres de la BD : 
+ ![alt text](Image/mediawiki_bd_parametres.PNG)  
+
+- Configuration du nom du wiki et de l'adminstrateur `iut` avec comme mot de passe `iutinfobaa` :  
+ ![alt text](Image/mediawiki_nomwiki_adminwiki.PNG)  
+
+- Installation de `Mediawiki` :  
+ ![alt text](Image/mediawiki_installation.PNG)  
+ ![alt text](Image/mediawiki_installer.PNG)  
+
+- Accès à mon wiki à l'adresse `https://2a4v3-31uvm0428.ad-urca.univ-reims.fr/mediawiki/index.php/Accueil` :  
+ ![alt text](Image/mediawiki_monwiki.PNG)  
+ ![alt text](Image/mediawiki_monwiki_iut.PNG)  
